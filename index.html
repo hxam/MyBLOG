@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://about.bancor.network/cn -->
+<html lang="cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta property="og:title" content="Bancor协议">
+    <meta property="og:description" content="创建下一代智能代币的标准">
+    <meta property="og:image" content="https://bancor.network/static/images/og_image.png">
+
+    
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="./index/bootstrap.min.css">
+    <link rel="stylesheet" href="./index/reset.css">
+    <link rel="stylesheet" href="./index/icons.css">
+    <link rel="stylesheet" href="./index/main.css">
+    <link rel="icon" type="image/ico" href="https://about.bancor.network/static/images/favicon.ico">
+
+    <title>
+        Bancorプロトコル
+    </title>
+
+    <script async="" src="./index/analytics.js.下载"></script><script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-91929308-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+<style>
+    .index-page-cn {
+        padding: 0;
+    }
+
+    .index-page-cn .hexagon {
+        margin-bottom: 47px;
+        text-align: left;
+    }
+
+    .index-page-cn .section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .index-page-cn .section-title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        color: #0b0f2b;
+        font-weight: bold;
+    }
+
+    .index-page-cn .section-description {
+        font-size: 16px;
+        margin-bottom: 24px;
+        line-height: 1.7;
+    }
+
+    .index-page-cn .main-section {
+        color: #fff;
+        background-color: #0b0f2b;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+
+    .index-page-cn .main-section .whitepaper-btn {
+        margin: 32px auto;
+    }
+
+    .index-page-cn .logo-symbol-light {
+        height: 120px;
+        width: 78px;
+        margin: 0 auto;
+    }
+
+    .index-page-cn .site-title {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .index-page-cn .social-links .social-icon {
+        margin: 0 4px;
+    }
+
+    .index-page-cn .site-tagline {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .index-page-cn .community {
+        font-size: 24px;
+        padding-top: 16px;
+    }
+
+    .index-page-cn .community img {
+        margin-top: 24px;
+    }
+
+    .index-page-cn .ico-section {
+        text-align: center;
+        font-size: 24px;
+        color: #0c102c;
+        position: relative;
+        background-image: linear-gradient(to top, rgba(26, 208, 206, 0.0), rgba(26, 208, 206, 0.2));
+    }
+
+    .index-page-cn .ico-section .section-description {
+        margin-bottom: 0;
+    }
+
+    .index-page-cn .section.videos-section {
+        color: #0c102c;
+        padding-top: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .index-page-cn .section.videos-section p {
+        margin-bottom: 4px;
+        margin-top: 4px;
+    }
+
+    .index-page-cn .section.videos-section .video-caption {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .index-page-cn .section.videos-section .video-link {
+        color: red;
+    }
+
+    .index-page-cn .use-cases-section {
+        text-align: center;
+        font-size: 24px;
+        color: #0c102c;
+        background: #f8f8f8;
+    }
+
+    .index-page-cn .use-cases-section .use-cases {
+        padding-top: 32px;
+    }
+
+    .index-page-cn .use-cases-section .use-case {
+        margin-bottom: 32px;
+    }
+
+    .index-page-cn .use-cases-section .use-case i {
+        color: #1ad0ce;
+        display: block;
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 16px;
+    }
+
+    .index-page-cn .use-cases-section .use-case-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .index-page-cn .use-cases-section .use-case-description {
+        color: #979797;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .index-page-cn .team-section {
+        color: #0c102c;
+    }
+
+    .index-page-cn .team-section .section-title {
+        text-align: center;
+    }
+
+    .index-page-cn .team-section .team-member{
+        margin-bottom: 64px;
+        /*text-align: center;*/
+    }
+
+    .index-page-cn .team-section .team-member-image{
+        margin-bottom: 16px;
+    }
+
+    .index-page-cn .team-section .team-member-image img{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .index-page-cn .team-section .team-member-name{
+        margin-bottom: 4px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .index-page-cn .team-section .team-member-position{
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    .index-page-cn .team-section .team-member-description{
+        font-size: 14px;
+        text-align: left;
+         /*text-align: center;*/
+        color: #979797;
+        line-height: 1.7;
+    }
+
+    .index-page-cn .team-section .section-description{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    @media (min-width: 992px) {
+        .index-page-cn .section {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+        .index-page-cn .section.videos-section {
+            font-size: 24px;
+        }
+        .index-page-cn .use-cases-section .use-cases {
+            padding-top: 48px;
+        }
+        .index-page-cn .use-cases-section .use-case {
+            margin-bottom: 64px;
+        }
+        .index-page-cn .section-title {
+            font-size: 40px;
+        }
+        .index-page-cn .section-description {
+            font-size: 24px;
+        }
+    }
+</style></head>
+
+
+
+<body class="index-page-cn">
+    <div class="main-section section">
+        <div class="container">
+            <div class="logo-symbol-light"></div>
+            <div class="site-title">Bancor协议</div>
+            <div class="site-tagline">创建下一代智能代币的标准</div>
+            <div class="social-links">
+                <a target="_blank" class="social-icon btt" href="https://bitcointalk.org/index.php?topic=1789222.0"><img width="32" src="./index/btt_hover.png" alt=""></a>
+<a target="_blank" class="social-icon github" href="https://github.com/bancorprotocol/contracts"><img width="32" src="./index/github_hover.png" alt=""></a>
+<a target="_blank" class="social-icon" href="https://www.reddit.com/r/Bancor/"><img width="32" src="./index/reddit_hover.png" alt=""></a>
+<a target="_blank" class="social-icon" href="https://twitter.com/bancornetwork"><img width="32" src="./index/twitter_hover.png" alt=""></a>
+<a target="_blank" class="social-icon" href="https://t.me/bancor"><img width="32" src="./index/telegram_hover.png" alt=""></a>
+<!-- <a target="_blank" class="social-icon" href="https://bancor-slack-invite.herokuapp.com/"><img width="32"src="/static/images/social/slack_hover.png" alt="" /></a> -->
+<a target="_blank" class="social-icon" href="https://cn.blog.bancor.network/"><img width="32" src="./index/medium_hover.png" alt=""></a>
+            </div>
+            <a target="_blank" href="https://about.bancor.network/whitepaper/cn" class="whitepaper-btn btn btn-green-filled">
+                中文白皮书
+            </a>
+            <!-- <div class="community">
+                <div>中文社区经理微信</div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto mr-sm-2">
+                        <img width="235" class="img-responsive" src="/static/images/wechat_crypto.jpg" alt="">
+                    </div>
+                    <div class="col-sm-auto ml-sm-2">
+                        <img width="235" class="img-responsive" src="/static/images/wechat_j.jpg" alt="">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="ico-section section">
+        <div class="section-title">全球众筹将于</div>
+        <!--<div class="section-description">北京时间5月30日17:00开始</div>-->
+    </div>
+
+    <div class="videos-section section">
+        <div class="container">
+            <a target="_blank" href="https://v.qq.com/x/page/y05004wdoks.html">
+                <img class="img-responsive" src="./index/galia_at_ted.jpg">
+            </a>
+            <div class="video-caption">
+                <p class="">Bancor联合创始人Galia发表TED演讲</p>
+                <p>“区块链如何引领价值互联网的变革”</p>
+            </div>
+            <div class="video-link">
+                video link:
+                <a target="_blank" href="https://v.qq.com/x/page/y05004wdoks.html">v.qq.com/x/page/y05004wdoks.html</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="use-cases-section section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="hexagon">
+                    <i class="icons8-bancor"></i>
+                </div>
+            </div>
+            <div class="section-title">什么是Bancor协议</div>
+            <div class="section-description">Bancor协议使用支持智能合约的以太坊区块链，为其代币内嵌价格发现和流动机制。这些“智能代币”能把一个或数个代币作为储备金，让任何人随时通过智能合约快速兑换、销毁代币或储备金。</div>
+            <div class="use-cases row">
+                <div class="use-case col-12 col-md-6 col-lg-4">
+                    <i class="icons8-exchange"></i>
+                    <div class="use-case-title">持续流动性</div>
+                    <div class="use-case-description">任何人在任何时刻都能通过智能<br>合约购买或销毁智能代币</div>
+                </div>
+                <div class="use-case col-12 col-md-6 col-lg-4">
+                    <i class="icons8-backwards"></i>
+                    <div class="use-case-title">向下兼容</div>
+                    <div class="use-case-description">Bancor能对现有的ERC20标准的<br>代币提供流动和价格发现机制</div>
+                </div>
+                <div class="use-case col-12 col-md-6 col-lg-4">
+                    <i class="icons8-module"></i>
+                    <div class="use-case-title">无价格差</div>
+                    <div class="use-case-description">价格通过智能代币计算<br>买卖双方共享相同价格</div>
+                </div>
+                <div class="use-case col-12 col-md-6 col-lg-4">
+                    <i class="icons8-safe-ok"></i>
+                    <div class="use-case-title">无对手方风险</div>
+                    <div class="use-case-description">无需再经过交易所兑换代币</div>
+                </div>
+                <div class="use-case col-12 col-md-6 col-lg-4">
+                    <i class="icons8-neutral-trading"></i>
+                    <div class="use-case-title">低波动性</div>
+                    <div class="use-case-description">储备金保证智能代币兑换时有<br>足够深度，从而降低波动性</div>
+                </div>
+                <div class="use-case col-12 col-md-6 col-lg-4">
+                    <i class="icons8-goal"></i>
+                    <div class="use-case-title">价格可预测性</div>
+                    <div class="use-case-description">价格波动能提前根据交易体积进<br>行计算，确保当前价格最新</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="team-section section">
+        <div class="container">
+            <div class="section-title">团队</div>
+
+            <div class="section-description">Bancor基金会</div>
+            <div class="bancor-team row">
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/eyal.png">
+                    </div>
+                    <div class="team-member-name">Eyal Hertzog</div>
+                    <div class="team-member-position">基金会成员</div>
+                    <div class="team-member-description">
+                        作为风投技术企业家已有20多年，同时是
+                        以色利发展最快的视频分享网站MetaCafe
+                        的创始人，高峰时有5000万访问量。
+                        <br><br>
+                        Eyal是以色列加密货币的思想领袖，同时
+                        在钢琴和低音创作方面卓有成就。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/guy.png">
+                    </div>
+                    <div class="team-member-name">Guy Benartzi</div>
+                    <div class="team-member-position">基金会成员</div>
+                    <div class="team-member-description">
+                        作为风投技术企业家已有15年，曾是Mytopia CEO（已被888收购），AppCoin和Particle Code创始人（后者已被Appcelerator收购），活跃天使投资人。
+                        <br><br>
+                        Guy在2011年就进入区块链领域。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/guido.png">
+                    </div>
+                    <div class="team-member-name">Guido Schmitz-Krummacher</div>
+                    <div class="team-member-position">基金会成员</div>
+                    <div class="team-member-description">
+                        中小企业的高管，在欧洲各地拥有超过25年的董事会和CEO角色经验。
+                        <br><br>
+                        Guido几年前加入数字货币行业，在瑞士楚格州出席各种区块链场合。
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-description">Bancor开发团队</div>
+            <div class="localcoin-team row">
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/yudi.png">
+                    </div>
+                    <div class="team-member-name">Yehuda Levi</div>
+                    <div class="team-member-position">首席技术官</div>
+                    <div class="team-member-description">
+                        作为风投技术企业家已有15年，曾是 Mytopia，Particle Code，AppCoin的联合创始人兼CTO。
+                        <br><br>
+                        Yudi率领Bancor的技术创新团队，开发Solidity合约和整体架构，是一名热忱的跨平台工程师。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/galia.png">
+                    </div>
+                    <div class="team-member-name">Galia Benartzi</div>
+                    <div class="team-member-position">商务拓展</div>
+                    <div class="team-member-description">
+                        作为风投技术企业家已有10年。曾是 Mytopia，Particle Code和AppCoin的联合创始人兼副总裁。 亦是Funders Fund投资合伙人之一。
+                        <br><br>
+                        Galia致力于在全球范围内推广区块链投资。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/ilana.png">
+                    </div>
+                    <div class="team-member-name">Ilana Pinchas</div>
+                    <div class="team-member-position">核心开发者</div>
+                    <div class="team-member-description">
+                        拥有15年的软件工程经验和6年的交易算法经验。
+                        <br><br>
+                        Ilana专门设计和构建服务器端基础架构和内部框架。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/or.png">
+                    </div>
+                    <div class="team-member-name">Or Bachar</div>
+                    <div class="team-member-position">核心开发者</div>
+                    <div class="team-member-description">
+                        全栈工程师，拥有超过5年的创业经验。
+                        <br>
+                        能从零开始搭建单页应用程序。
+                        <br><br>
+                        Or对互联网和区块链的交互结合有着很强兴趣。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/omry.png">
+                    </div>
+                    <div class="team-member-name">Omry Rozenfeld</div>
+                    <div class="team-member-position">核心开发者</div>
+                    <div class="team-member-description">
+                        接受过精英军事计算机科学培训，在iOS，Android和Web方面拥有5年的前端开发经验。
+                        <br><br>
+                        Omry热衷于通过区块链来改变世界。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/asaf.png">
+                    </div>
+                    <div class="team-member-name">Asaf Rachman</div>
+                    <div class="team-member-position">核心开发者</div>
+                    <div class="team-member-description">
+                        接受过精英军事计算机科学培训，是全栈工程师，在期权、期货、股票和债券等方面有8年经验。
+                        <br><br>
+                        Asaf擅长后端开发，对技术和金融的跨界交互充满热情。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/mati.png">
+                    </div>
+                    <div class="team-member-name">Mati Levi</div>
+                    <div class="team-member-position">质量保证工程师</div>
+                    <div class="team-member-description">
+                        质量保证工程师，在自动化设计和跨平台部署方面拥有超过8年的经验。
+                        <br><br>
+                        Mati是一个小工具爱好者。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/itay.png">
+                    </div>
+                    <div class="team-member-name">Itay Dreyfus</div>
+                    <div class="team-member-position">产品设计师</div>
+                    <div class="team-member-description">
+                        设计师，在iOS，Android和Web界面设计方面有5年经验。
+                        <br><br>
+                        Itay设计了Bancor界面及其视觉效果，他痴迷于用户体验。
+                    </div>
+                </div>
+                <div class="team-member col-12 col-md-6 col-lg-4">
+                    <div class="team-member-image">
+                        <img src="./index/meni.png">
+                    </div>
+                    <div class="team-member-name">Meni Rosenfeld</div>
+                    <div class="team-member-position">区块链顾问</div>
+                    <div class="team-member-description">
+                        Meni是魏兹曼科学研究所屡获殊荣的数学家，专门从事机器学习。 在2011年3月接触比特币后，他在以色列建立了比特币社区，成立了第一个比特币交易所，并对基于比特币和区块链系统功能的算法进行了数学研究。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body></html>
